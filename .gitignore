@@ -1,6 +1,4 @@
-models/
 mlflow.db
-mlruns/
 __pycache__/
 *.pyc
 .env
