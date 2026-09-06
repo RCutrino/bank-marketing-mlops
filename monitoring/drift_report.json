@@ -1,0 +1,109 @@
+{
+  "summary": {
+    "threshold": 0.05,
+    "total_features": 15,
+    "drifted_features": 7,
+    "drifted": [
+      "job",
+      "marital",
+      "education",
+      "default",
+      "housing",
+      "contact",
+      "month"
+    ],
+    "drift_detected": true
+  },
+  "features": {
+    "age": {
+      "statistic": 0.043,
+      "p_value": 0.3285,
+      "test": "KS",
+      "drift": false
+    },
+    "balance": {
+      "statistic": 0.0447,
+      "p_value": 0.2844,
+      "test": "KS",
+      "drift": false
+    },
+    "campaign": {
+      "statistic": 0.0276,
+      "p_value": 0.8492,
+      "test": "KS",
+      "drift": false
+    },
+    "pdays": {
+      "statistic": 0.0179,
+      "p_value": 0.9972,
+      "test": "KS",
+      "drift": false
+    },
+    "previous": {
+      "statistic": 0.0143,
+      "p_value": 1.0,
+      "test": "KS",
+      "drift": false
+    },
+    "day": {
+      "statistic": 0.0402,
+      "p_value": 0.4106,
+      "test": "KS",
+      "drift": false
+    },
+    "job": {
+      "statistic": 118.6924,
+      "p_value": 0.0,
+      "test": "chi2",
+      "drift": true
+    },
+    "marital": {
+      "statistic": 22.0502,
+      "p_value": 0.0,
+      "test": "chi2",
+      "drift": true
+    },
+    "education": {
+      "statistic": 56.5381,
+      "p_value": 0.0,
+      "test": "chi2",
+      "drift": true
+    },
+    "default": {
+      "statistic": 38.1613,
+      "p_value": 0.0,
+      "test": "chi2",
+      "drift": true
+    },
+    "housing": {
+      "statistic": 20.1066,
+      "p_value": 0.0,
+      "test": "chi2",
+      "drift": true
+    },
+    "loan": {
+      "statistic": 0.7845,
+      "p_value": 0.3758,
+      "test": "chi2",
+      "drift": false
+    },
+    "contact": {
+      "statistic": 12.9048,
+      "p_value": 0.0016,
+      "test": "chi2",
+      "drift": true
+    },
+    "month": {
+      "statistic": 227.9122,
+      "p_value": 0.0,
+      "test": "chi2",
+      "drift": true
+    },
+    "poutcome": {
+      "statistic": 6.9278,
+      "p_value": 0.0742,
+      "test": "chi2",
+      "drift": false
+    }
+  }
+}
